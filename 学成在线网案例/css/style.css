@@ -5,6 +5,12 @@
 body {
     background-color: #f3f5f7;
 }
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
 /* 清除浮动 */
 .clearfix:before, .clearfix:after {
     content: "";
@@ -34,12 +40,6 @@ body {
     width: 198px;
     height: 42px;
     /* background-color: purple; */
-}
-li {
-    list-style: none;
-}
-a {
-    text-decoration: none;
 }
 /* 导航栏 */
 .nav {
@@ -78,6 +78,7 @@ a {
     font-size: 14px;
     border: 1px solid #00a4ff;
     border-right: 0;
+    outline: none;
 }
 /* 搜索按钮 */
 .search button {
@@ -95,6 +96,10 @@ a {
     line-height: 42px;
     font-size: 14px;
     color: #666;
+}
+/* 用户头像 */
+.user img {
+    vertical-align: middle;
 }
 /* Banner */
 .banner {
@@ -200,37 +205,38 @@ a {
     color: #050505;
     border-left: 1px solid #bfbfbf;
 }
+/* 修改兴趣 */
 .mod {
     float: right;
     margin-right: 30px;
     font-size: 14px;
     color: #00a4ff;
 }
-.box {
+.box-rec {
     margin-top: 35px;
 }
-/* 核心内容 */
-.box-hd {
+/* 核心内容 - 推荐模块 */
+.box-rec-hd {
     margin-top: 35px;
     /* background-color: pink; */
     height: 45px;
     line-height: 45px;
 }
-.box-hd h3 {
+.box-rec-hd h3 {
     float: left;
     font-size: 20px;
     color: #494949;
 }
-.box-hd a {
+.box-rec-hd a, .box-int-hd > a {
     float: right;
     margin-right: 30px;
     font-size: 12px;
     color: #abacac;
 }
-.box ul {
+.box-rec ul {
     width: 1225px;
 }
-.box-bd ul li {
+.box-rec-bd ul li {
     float: left;
     position: relative;
     width: 228px;
@@ -239,30 +245,125 @@ a {
     margin-bottom: 15px;
     background-color: white;
 }
-.box-bd ul li > img {
+.box-rec-bd ul li > img {
     width: 100%;
 }
-.box-bd ul li em {
+.box-rec-bd ul li em {
     position: absolute;
     top: 4px;
     right: -4px;
 }
-.box-bd ul li h4 {
+.box-rec-bd ul li h4, .box-int-bd-content-course ul li h4 {
     margin: 20px 20px 20px 25px;
     font-size: 14px;
     color: black;
 }
-.box-bd .info {
+.box-rec-bd .info, .box-int-bd-content-course .info {
     margin: 0 20px 0 25px;
     font-size: 12px;
     color: #999999;
 }
-.box-bd .info span {
+.box-rec-bd .info span, .box-int-bd-content-course .info span {
     color: #ff7c2d;
 }
-.box ul li:hover {
+.box-rec ul li:hover, .box-int-bd-content-course ul li:hover {
     box-shadow: 0 1px 5px 5px rgba(0, 0, 0, .1);
 }
+/* 核心内容 - 编程入门模块 */
+.box-int {
+    margin-top: 35px;
+    /* background-color: skyblue; */
+}
+.box-int-hd {
+    /* background-color: pink; */
+    height: 45px;
+    line-height: 45px;
+}
+.box-int-hd h3 {
+    float: left;
+}
+.box-int-hd ul {
+    margin-left: 350px;
+}
+.box-int-hd ul li {
+    float: left;
+    margin-left: 50px;
+}
+.box-int-hd ul li a {
+    font-size: 16px;
+    color: #868686;
+}
+.box-int-hd ul li a:hover {
+    color: #00a4ff;
+}
+.box-int-bd {
+    height: 392px;
+    /* background-color: skyblue; */
+}
+.box-int-bd-nav {
+    width: 229px;
+    height: 392px;
+    float: left;
+    /* background-color: pink; */
+}
+.box-int-bd-nav img {
+    width: 100%;
+    height: 100%;
+}
+.box-int-bd-content {
+    float: right;
+    width: 959px;
+    height: 392px;
+    /* background-color: pink; */
+}
+.box-int-bd-content-ad {
+    width: 959px;
+    height: 99px;
+    background-color: purple;
+}
+.box-int-bd-content-ad img {
+    width: 100%;
+    height: 100%;
+}
+.box-int-bd-content-course {
+    margin-top: 23px;
+    width: 973px;
+    height: 270px;
+    /* background-color: orange; */
+}
+.box-int-bd-content-course ul li {
+    float: left;
+    margin-right: 15px;
+    width: 228px;
+    height: 270px;
+    background-color: white;
+}
+.box-int-bd-content-course ul li img {
+    width: 100%;
+}
+/* 左侧悬浮菜单 */
+.menu {
+    position: fixed;
+    top: 50%;
+    margin-top: -214px;
+    left: 50%;
+    margin-left: -800px;
+    width: 184px;
+    height: 425px;
+    background-color: white;
+}
+.menu ul li {
+    padding-left: 24px;
+    margin-top: 15px;
+}
+.menu ul li a {
+    font-size: 14px;
+    color: black;
+}
+.menu ul li a:hover {
+    color: #00a4ff;
+}
+
 /* footer */
 .footer {
     margin-top: 25px;
@@ -273,6 +374,7 @@ a {
     padding: 30px 0 0 20px;
     /* background-color: pink; */
 }
+/* 版权 */
 .copyright {
     float: left;
     /* background-color: skyblue; */
@@ -292,6 +394,7 @@ a {
     line-height: 38px;
     border: 1px solid #00a4ff;
 }
+/* 友情链接 */
 .link {
     float: right;
 }
