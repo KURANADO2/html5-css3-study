@@ -1,0 +1,399 @@
+.main {
+    margin-top: 9px;
+    margin-left: 220px;
+    width: 980px;
+    height: 455px;
+    /* background-color: skyblue; */
+}
+.main .focus {
+    position: relative;
+    float: left;
+    width: 721px;
+    height: 100%;
+    /* background-color: pink; */
+}
+.main .newsflash {
+    float: right;
+    width: 250px;
+    height: 100%;
+    /* background-color: orange; */
+}
+.focus img {
+    width: 100%;
+    height: 100%;
+}
+.focus .prev, .focus .next {
+    font-family: 'icomoon';
+    color: white;
+}
+.focus .prev::after {
+    content: '\e902';
+}
+.focus .next::after {
+    content: '\e901';
+}
+.focus .prev, .focus .next {
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    width: 20px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, .3);
+}
+.focus .prev {
+    left: 0;
+    border-radius: 0 15px 15px 0;
+}
+.focus .next {
+    right: 0;
+    border-radius: 15px 0 0 15px;
+}
+
+.focus .nav {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -70px;
+    width: 140px;
+    height: 26px;
+    background-color: rgba(0, 0, 0, .3);
+    border-radius: 13px;
+}
+.focus .nav ul li {
+    float: left;
+    margin: 6px;
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border-radius: 8px;
+}
+.focus .nav ul li:hover {
+    background-color: #c81623;
+}
+.news {
+    width: 100%;
+    height: 165px;
+    border: 1px solid #e4e4e4;
+}
+.life_service {
+    width: 100%;
+    height: 209px;
+    border: 1px solid #e4e4e4;
+    border-top: 0;
+}
+.bargin {
+    margin-top: 6px;
+}
+.news_hd {
+    padding: 0 15px;
+    height: 33px;
+    line-height: 33px;
+    border-bottom: 1px dotted #e4e4e4;
+}
+.news_hd h5 {
+    float: left;
+    font-size: 14px;
+}
+.news_hd a {
+    float: right;
+}
+.news_hd a::after {
+    font-family: 'icomoon';
+    content: '\e901';
+}
+.news_bd {
+    padding: 12px 0 0 16px;
+}
+.news_bd ul li {
+    height: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.life_service {
+    overflow: hidden;
+}
+.life_service ul {
+    width: 252px;
+}
+.life_service ul li {
+    float: left;
+    padding-top: 13px;
+    width: 63px;
+    height: 70px;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    text-align: center;
+}
+.life_service ul li i {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    /* background-color: pink; */
+}
+.life_service ul li:nth-child(1) i {
+    background: url("../images/icons.png") -17px -15px;
+}
+.life_service ul li:nth-child(2) i {
+    background: url("../images/icons.png") -79px -17px;
+}
+.life_service ul li:nth-child(3) i {
+    background: url("../images/icons.png") -141px -17px;
+}
+.life_service ul li:nth-child(4) i {
+    background: url("../images/icons.png") -205px -17px;
+}
+.life_service ul li:nth-child(5) i {
+    background: url("../images/icons.png") -16px -87px;
+}
+.life_service ul li:nth-child(6) i {
+    background: url("../images/icons.png") -79px -87px;
+}
+.life_service ul li:nth-child(7) i {
+    background: url("../images/icons.png") -142px -87px;
+}
+.life_service ul li:nth-child(8) i {
+    background: url("../images/icons.png") -208px -87px;
+}
+.life_service ul li:nth-child(9) i {
+    background: url("../images/icons.png") -16px -158px;
+}
+.life_service ul li:nth-child(10) i {
+    background: url("../images/icons.png") -78px -158px;
+}
+.life_service ul li:nth-child(11) i {
+    background: url("../images/icons.png") -142px -159px;
+}
+.life_service ul li:nth-child(12) i {
+    background: url("../images/icons.png") -208px -159px;
+}
+.recom {
+    height: 163px;
+    margin-top: 11px;
+    background-color: #ebebeb;
+}
+.recom_hd {
+    float: left;
+    padding-top: 31px;
+    width: 206px;
+    height: 100%;
+    text-align: center;
+    background-color: #5c5251;
+}
+.recom_hd i::after {
+    font-family: 'icomoon';
+    content: '\e906';
+    font-size: 40px;
+    color: white;
+}
+.recom_hd p {
+    font-size: 18px;
+    color: white;
+}
+.recom_hd i:hover::after, .recom_hd p:hover {
+    color: #c81623;
+}
+.recom_bd {
+    float: right;
+    width: 980px;
+    /* background-color: skyblue; */
+}
+.recom_bd ul li {
+    position: relative;
+    float: left;
+    width: 245px;
+    height: 163px;
+    /* background-color: pink; */
+}
+.recom_bd ul li:nth-child(-n+3)::after {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    content: '';
+    width: 1px;
+    height: 143px;
+    background-color: #ddd;
+}
+.recom_bd ul li img {
+    width: 100%;
+    height: 100%;
+}
+.like_hd {
+    margin-top: 21px;
+    height: 38px;
+    line-height: 38px;
+    /* background-color: skyblue; */
+}
+.like_hd h4 {
+    float: left;
+    font-size: 18px;
+}
+.like_hd a {
+    float: right;
+    margin-right: 21px;
+}
+.like_hd a::after {
+    padding-left: 9px;
+    font-family: 'icomoon';
+    content: '\e907';
+    font-size: 12px;
+}
+.like_bd {
+    height: 233px;
+    border: 1px solid #ededed;
+}
+.like_bd ul {
+    width: 1206px;
+}
+.like_bd ul li {
+    position: relative;
+    float: left;
+    width: 201px;
+    height: 231px;
+}
+.like_bd ul li:nth-child(-n+5)::after {
+    position: absolute;
+    bottom: 9px;
+    right: 0;
+    content: '';
+    width: 1px;
+    height: 62px;
+    background-color: #ededed;
+}
+.like_bd ul li img {
+    width: 100%;
+    height: 154px;
+}
+.like_info {
+    padding: 9px 35px 12px 35px;
+}
+.like_desc {
+    height: 38px;
+    color: #666666;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* 弹性伸缩盒子模型显示 */
+    display: -webkit-box;
+    /* 限制在一个块内元素显示文本的行数，想让第几行末尾显示省略号，该属性值就等于几 */
+    -webkit-line-clamp: 2;
+    /* 设置或检索伸缩和对象的子元素的排列方式 */
+    -webkit-box-orient: vertical;
+}
+.like_pric {
+    color: #df3033;
+    font-size: 18px;
+}
+.jiadian .box_hd {
+    margin-top: 18px;
+    height: 41px;
+    line-height: 41px;
+    border-bottom: 2px solid #c81623;
+}
+.jiadian .box_hd h4 {
+    float: left;
+    font-size: 18px;
+    color: #c81623;
+}
+.jiadian .tab_list {
+    float: right;
+}
+.jiadian .tab_list ul li {
+    float: left;
+}
+.jiadian .tab_list ul li a {
+    padding: 0 16px;
+}
+.jiadian .box_bd {
+    height: 360px;
+    /* background-color: skyblue; */
+}
+.jiadian .box_bd .tab_list_item>div {
+    float: left;
+}
+.jiadian .box_bd .col_210 {
+    width: 210px;
+    height: 360px;
+    background-color: #f9f9f9;
+}
+.jiadian .box_bd .col_210 ul {
+    padding: 0 14px;
+}
+.jiadian .box_bd .col_210 ul li {
+    float: left;
+    width: 86px;
+    height: 33px;
+    line-height: 33px;
+    text-align: center;
+    border-bottom: 1px solid #ededed;
+}
+.jiadian .box_bd .col_210 img {
+    width: 100%;
+    height: 248px;
+}
+.jiadian .box_bd .col_329 {
+    width: 329px;
+}
+.jiadian .box_bd .col_329 a {
+    display: block;
+}
+.jiadian .box_bd .col_329 img {
+    width: 100%;
+    height: 100%;
+}
+.jiadian .box_bd .col_219 {
+    width: 219px;
+}
+.jiadian .box_bd .col_219 a:first-child {
+    display: block;
+    height: 181px;
+    border-bottom: 1px solid #ededed;
+}
+.jiadian .box_bd .col_219 a:first-child img {
+    width: 100%;
+    height: 100%;
+}
+.jiadian .box_bd .col_219 a:last-child {
+    display: block;
+    height: 179px;
+    border-bottom: 1px solid #ededed;
+}
+.jiadian .box_bd .col_219 a:last-child img {
+    width: 100%;
+    height: 100%;
+}
+.jiadian .box_bd .col_222 {
+    width: 222px;
+}
+.jiadian .box_bd .col_222 a {
+    display: block;
+    border-left: 1px solid #ededed;
+    border-right: 1px solid #ededed;
+}
+.jiadian .box_bd .col_222 img {
+    width: 100%;
+    height: 360px;
+}
+.jiadian .box_bd .col_220 {
+    width: 220px;
+}
+.jiadian .box_bd .col_220 a:first-child {
+    display: block;
+    height: 181px;
+    border-bottom: 1px solid #ededed;
+}
+.jiadian .box_bd .col_220 a:first-child img {
+    width: 100%;
+    height: 100%;
+}
+.jiadian .box_bd .col_220 a:last-child {
+    display: block;
+    height: 179px;
+    border-bottom: 1px solid #ededed;
+}
+.jiadian .box_bd .col_220 a:last-child img {
+    width: 100%;
+    height: 100%;
+}

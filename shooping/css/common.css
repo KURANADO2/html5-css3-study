@@ -69,7 +69,7 @@
 .header {
     position: relative;
     height: 105px;
-    background-color: skyblue;
+    /* background-color: skyblue; */
 }
 
 .logo {
@@ -77,7 +77,7 @@
     top: 27px;
     width: 171px;
     height: 61px;
-    background-color: pink;
+    /* background-color: pink; */
 }
 
 .logo a {
@@ -152,7 +152,7 @@
     top: -5px;
     padding: 0 5px;
     height: 14px;
-    line-height: 17px;
+    line-height: 14px;
     color: white;
     background-color: #e60012;
     border-radius: 7px 7px 7px 0;
@@ -167,6 +167,131 @@
     height: 45px;
     background-color: #b1191a;
 }
+.dropdown .dt {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 45px;
+    font-size: 16px;
+    color: white;
+}
+.dropdown .dd {
+    /* display: none; */
+    width: 100%;
+    height: 466px;
+    background-color: #c81623;
+}
+.dropdown .dd ul li {
+    height: 31px;
+    margin-left: 1px;
+    line-height: 31px;
+    padding-left: 12px;
+}
+.dropdown .dd ul li a {
+    font-size: 14px;
+    color: white;
+}
+.dropdown .dd ul li::after {
+    float: right;
+    margin-right: 5px;
+    content: '\e901';
+    font-family: 'icomoon';
+    color: white;
+}
+.dropdown .dd ul li:hover {
+    background-color: white;
+}
+.dropdown .dd ul li:hover a {
+    color: #c81623;
+}
 .nav .navitems {
     float: left;
+}
+.navitems ul li {
+    float: left;
+    height: 45px;
+    line-height: 45px;
+}
+.navitems ul li a {
+    padding: 0 25px;
+    font-size: 16px;
+}
+/* footer 模块 */
+.footer {
+    height: 417px;
+    background-color: #f5f5f5;
+}
+.footer .mod_service {
+    padding-top: 30px;
+    height: 109px;
+    border-bottom: 1px solid #ededed;
+}
+.mod_service ul li {
+    float: left;
+    padding-left: 37px;
+    width: 240px;
+    /* background-color: pink; */
+}
+.mod_service ul li h5 {
+    float: left;
+    margin-right: 7px;
+    width: 50px;
+    height: 50px;
+    /* background-color: skyblue; */
+}
+.mod_service ul li:nth-child(1) h5 {
+    background: url('../images/icons.png') no-repeat -252px -2px;
+}
+.mod_service ul li:nth-child(2) h5 {
+    background: url('../images/icons.png') no-repeat -254px -53px;
+}
+.mod_service ul li:nth-child(3) h5 {
+    background: url('../images/icons.png') no-repeat -256px -105px;
+}
+.mod_service ul li:nth-child(4) h5 {
+    background: url('../images/icons.png') no-repeat -257px -156px;
+}
+.mod_service ul li:nth-child(5) h5 {
+    background: url('../images/icons.png') no-repeat -257px -208px;
+}
+.mod_service ul li h4 {
+    padding-top: 5px;
+    font-size: 14px;
+}
+.mod_service ul li p {
+    font-size: 12px;
+}
+.mod_help {
+    height: 188px;
+    /* background-color: skyblue; */
+    border-bottom: 1px solid #ededed;
+}
+.mod_help dl {
+    float: left;
+    padding-top: 21px;
+    padding-left: 52px;
+    width: 200px;    
+}
+.mod_help dl dt {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+.mod_help dl dd {
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+.mod_help dl:last-child {
+    text-align: center;
+}
+.mod_copyright {
+    text-align: center;
+}
+.mod_copyright .links {
+    padding: 20px 0 15px 0;
+}
+.mod_copyright .links a {
+    padding: 0 14px;
+}
+.mod_copyright .address {
+    margin-bottom: 10px;
 }
