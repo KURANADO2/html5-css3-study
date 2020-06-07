@@ -1,0 +1,125 @@
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+.header {
+    padding-top: 21px;
+    height: 84px;
+    border-bottom: 2px solid #b1191a;
+}
+.register_area {
+    margin-top: 20px;
+    height: 522px;
+    border: 1px solid #ccc;
+}
+.register_hd {
+    padding: 0 10px;
+    height: 41px;
+    line-height: 41px;
+    border-bottom: 1px solid #ccc;
+    background-color: #ececec;
+}
+.register_hd h3 {
+    float: left;
+    font-size: 18px;
+}
+.register_hd p {
+    float: right;
+    font-size: 14px;
+}
+.register_hd p a {
+    color: #c81623;
+}
+.register_bd {
+    margin: 54px auto;
+    width: 703px;
+    height: 422px;
+}
+.register_bd ul li {
+    margin-bottom: 20px;
+}
+.register_bd label {
+    display: inline-block;
+    width: 183px;
+    text-align: right;
+    font-size: 14px;
+}
+.register_bd input[type='text'] {
+    margin-right: 5px;
+    padding-left: 15px;
+    width: 241px;
+    height: 36px;
+    border: 1px solid #999999;
+}
+.register_bd .succ_icon, .register_bd .error_icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -1px;
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+}
+.register_bd .succ_icon {
+    background: url('../images/succ.png') no-repeat;
+}
+.register_bd .error_icon {
+    background: url('../images/error.png') no-repeat;
+}
+.register_bd .succ {
+    font-size: 12px;
+}
+.register_bd .succ {
+    color: green;
+}
+.register_bd .error {
+    color: #df3033;
+}
+.safe {
+    margin-left: 239px;
+}
+.safe em {
+    margin-left: 1px;
+    padding: 0 17px;
+    height: 13px;
+    color: white;
+}
+.safe .low {
+    background-color: #de1111;
+}
+.safe .mid {
+    background-color: #f79100;
+}
+.safe .high {
+    background-color: #40b83f;
+}
+.agree {
+    margin-left: 187px;
+}
+.agree input[type='checkbox'] {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.agree a {
+    color: #1ba1e6;
+}
+input[type='submit'] {
+    margin: 40px 0 0 187px;
+    width: 200px;
+    height: 34px;
+    font-size: 14px;
+    color: white;
+    background-color: #c81623;
+    cursor: pointer;
+}
+.mod_copyright {
+    text-align: center;
+}
+.mod_copyright .links {
+    padding: 20px 0 15px 0;
+}
+.mod_copyright .links a {
+    padding: 0 14px;
+}
+.mod_copyright .address {
+    margin-bottom: 10px;
+}

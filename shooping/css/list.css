@@ -1,0 +1,129 @@
+/* 列表页 CSS */
+.sk {
+    position: absolute;
+    top: 40px;
+    left: 185px;
+    padding-left: 15px;
+    padding: 3px 0 3px 15px;
+    border-left: 1px solid #b1191a;
+}
+.sk_list {
+    float: left;
+}
+.sk_list ul li {
+    float: left;
+    height: 47px;
+    padding: 0 29px;
+    line-height: 47px;
+}
+.sk_list ul li a {
+    font-size: 16px;
+    font-weight: 700;
+}
+.sk_con {
+    float: right;
+}
+.sk_con ul li {
+    float: left;
+    height: 47px;
+    line-height: 50px;
+    padding: 0 23px;
+}
+.sk_con ul li a {
+    font-size: 14px;
+}
+.list_hd {
+    width: 100%;
+    height: 120px;
+    /* background-color: skyblue; */
+}
+.list_hd img {
+    width: 100%;
+    height: 100%;
+}
+.list_bd {
+    margin-top: 25px;
+}
+.list_bd > ul > li {
+    position: relative;
+    float: left;
+    margin-right: 13px;
+    margin-bottom: 5px;
+    width: 290px;
+    height: 460px;
+    border: 1px solid transparent;
+    /* background-color: skyblue; */
+}
+.list_bd > ul > li:nth-child(4n) {
+    margin-right: 0;
+}
+.list_bd > ul > li:hover {
+    border: 1px solid #e12228;
+}
+.list_bd > ul > li img {
+    width: 288px;
+    height: 288px;
+}
+.list_bd .info {
+    width: 100%;
+    padding: 12px;
+}
+.price {
+    margin: 5px 0;
+}
+.price .price_new {
+    margin-right: 6px;
+    font-size: 22px;
+    color: #e60012;
+}
+.list_bd .old_price {
+    text-decoration: line-through;
+    font-size: 14px;
+    color: #a4a4a4;
+}
+.progress ul li {
+    float: left;
+    margin-right: 5px;
+    height: 14px;
+    line-height: 14px;
+    font-size: 14px;
+}
+.progress .remain span {
+    color: #ed282e;
+}
+.progress_box {
+    margin-top: 3px;
+    width: 120px;
+    height: 10px;
+    border: 1px solid #ed282e;
+    border-radius: 5px;
+}
+.progress_in {
+    width: 37%;
+    height: 100%;
+    background-color: #ed282e;
+    border-radius: 5px;
+    transition: width ease .5s;
+}
+.progress_box:hover .progress_in {
+    width: 100%;
+}
+.buy {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 288px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    background-color: #ed282e;
+}
+.buy:hover {
+    font-weight: 700;
+    color: white;
+}
+.footer {
+    margin-top: 100px;
+}
