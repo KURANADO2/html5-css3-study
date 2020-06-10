@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .map {
+            position: relative;
+            margin: 0 auto;
+            width: 1080px;
+            height: 777px;
+            background-color: black;
+            background: url("./images/map.jpeg") no-repeat;
+        }
+
+        .city {
+            position: absolute;
+        }
+
+        .beijing {
+            top: 290px;
+            left: 690px;
+        }
+
+        .shanghai {
+            top: 459px;
+            left: 797px;
+        }
+
+        .taiwan {
+            top: 621px;
+            left: 808px;
+        }
+
+        .dotted {
+            width: 8px;
+            height: 8px;
+            background-color: red;
+            border-radius: 50%;
+        }
+
+        .city div[class^="pulse"] {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 8px;
+            height: 8px;
+            box-shadow: 0 0 12px red;
+            border-radius: 50%;
+            animation: pulse 1.2s linear infinite;
+        }
+
+        .city div[class="pulse2"] {
+            animation-delay: .4s;
+        }
+
+        .city div[class="pulse3"] {
+            animation-delay: .8s;
+        }
+
+        @keyframes pulse {
+            0% {
+                width: 8px;
+                height: 8px;
+            }
+
+            70% {
+                /* 此处没有使用 transform: scale(5); 来放大，是因为 scale 会使阴影也变大，效果并不好看 */
+                width: 40px;
+                height: 40px;
+                opacity: 1;
+            }
+
+            100% {
+                width: 80px;
+                height: 80px;
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="map">
+        <div class="city beijing">
+            <div class="dotted"></div>
+            <div class="pulse1"></div>
+            <div class="pulse2"></div>
+            <div class="pulse3"></div>
+        </div>
+        <div class="city shanghai">
+            <div class="dotted"></div>
+            <div class="pulse1"></div>
+            <div class="pulse2"></div>
+            <div class="pulse3"></div>
+        </div>
+        <div class="city taiwan">
+            <div class="dotted"></div>
+            <div class="pulse1"></div>
+            <div class="pulse2"></div>
+            <div class="pulse3"></div>
+        </div>
+    </div>
+</body>
+
+</html>

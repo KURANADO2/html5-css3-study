@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            overflow: hidden;
+            white-space: nowrap;
+            width: 0;
+            font-size: 20px;
+            background-color: skyblue;
+            animation: print 2s steps(10) forwards;
+        }
+
+        @keyframes print {
+            0% {
+                width: 0;
+            }
+            100% {
+                width: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>一二三四五六七八九十</div>
+</body>
+
+</html>

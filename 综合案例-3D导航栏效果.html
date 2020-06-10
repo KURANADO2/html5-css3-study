@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    float: left;
+    list-style: none;
+    /* 因为 .box 也需要翻转，所以将透视加在 li 上而没有加在 .box 上 */
+    perspective: 500px;
+}
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+.box {
+    position: relative;
+    width: 150px;
+    height: 35px;
+    margin: 0 auto;
+    transform-style: preserve-3d;
+    transition: all .1s;
+}
+.front,
+.bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 35px;
+}
+.front {
+    background-color: skyblue;
+    /* 将前面的盒子向前移 17.5px，以保证后面能够以长方体的中心进行旋转 */
+    transform: translateZ(17.5px);
+}
+.bottom {
+    background-color: pink;
+    transform: translateY(17.5px) rotateX(-90deg);
+}
+.box:hover {
+    transform: rotateX(90deg);
+}
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <div class="box">
+                <div class="bottom"><a href="#">底部菜单</a></div>
+                <div class="front"><a href="#">正面菜单</a></div>
+            </div>
+        </li>
+        <li>
+            <div class="box">
+                <div class="bottom"><a href="#">底部菜单</a></div>
+                <div class="front"><a href="#">正面菜单</a></div>
+            </div>
+        </li>
+        <li>
+            <div class="box">
+                <div class="bottom"><a href="#">底部菜单</a></div>
+                <div class="front"><a href="#">正面菜单</a></div>
+            </div>
+        </li>
+        <li>
+            <div class="box">
+                <div class="bottom"><a href="#">底部菜单</a></div>
+                <div class="front"><a href="#">正面菜单</a></div>
+            </div>
+        </li>
+        <li>
+            <div class="box">
+                <div class="bottom"><a href="#">底部菜单</a></div>
+                <div class="front"><a href="#">正面菜单</a></div>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>
