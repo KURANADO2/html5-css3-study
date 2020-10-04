@@ -1,0 +1,46 @@
+body {
+    max-width: 540px;
+    min-width: 320px;
+    margin: 0 auto;
+    font: normal 14px/1.5 Tahoma,"Lucida Grande",Verdana,"Microsoft Yahei",STXihei,hei;
+    color: #000;
+    background: #f2f2f2;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;  
+}
+a {
+    text-decoration: none;
+}
+.search {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 540px;
+    min-width: 320px;
+    height: 44px;
+    background-color: skyblue;
+}
+.search-box {
+    flex: 1;
+    background-color: pink;
+}
+.user {
+    width: 51px;
+    height: 44px;
+    background-color: purple;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+}
+.user::before {
+    content: '';
+    display: block;
+    width: 22px;
+    height: 22px;
+    background: url(../images/sprite.png) no-repeat -1px -35px;
+    background-size: 20px auto;
+    margin: 4px auto 0;
+}

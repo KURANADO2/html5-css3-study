@@ -6,34 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
         section {
+            display: flex;
+            width: 60%;
+            height: 200px;
             margin: 0 auto;
-            width: 100%;
-            max-width: 980px;
-            min-width: 300px;
+            background-color: skyblue;
+            /* 会让 3 个盒子都下来 */
+            /* align-items: flex-end; */
         }
         section div {
-            float: left;
-            width: 50%;
-            height: 300px;
+            width: 100px;
+            height: 100px;
+            margin-right: 10px;
+            background-color: pink;
         }
-        section div:first-child {
-            background-color: skyblue;
+        section div:nth-child(2) {
+            order: -1;
         }
-        section div:last-child {
-            background-color: purple;
+        section div:nth-child(3) {
+            /* 只让 3 号盒子下来 */
+            align-self: flex-end;
         }
     </style>
 </head>
 
 <body>
     <section>
-        <div></div>
-        <div></div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
     </section>
 </body>
 
