@@ -6,37 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        section {
-            display: flex;
-            width: 60%;
+        div {
+            width: 400px;
             height: 200px;
-            margin: 0 auto;
-            background-color: skyblue;
-            /* 会让 3 个盒子都下来 */
-            /* align-items: flex-end; */
-        }
-        section div {
-            width: 100px;
-            height: 100px;
-            margin-right: 10px;
-            background-color: pink;
-        }
-        section div:nth-child(2) {
-            order: -1;
-        }
-        section div:nth-child(3) {
-            /* 只让 3 号盒子下来 */
-            align-self: flex-end;
+            background: linear-gradient(left, skyblue, pink);
+            background: -webkit-linear-gradient(left top, red, orange, yellow, green, cyan, blue, purple);
         }
     </style>
 </head>
 
 <body>
-    <section>
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-    </section>
+    <div></div>
 </body>
 
 </html>

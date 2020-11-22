@@ -8,9 +8,21 @@ body {
     overflow-x: hidden;
     -webkit-tap-highlight-color: transparent;  
 }
+/* C3 盒子模型*/
+div {
+    box-sizing: border-box;
+}
 a {
     text-decoration: none;
+    color: #222;
+    font-size: 12px;
 }
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/* 搜索 */
 .search {
     display: flex;
     position: fixed;
@@ -21,18 +33,42 @@ a {
     max-width: 540px;
     min-width: 320px;
     height: 44px;
-    background-color: skyblue;
+    /* background-color: skyblue; */
+    background-color: #f6f6f6;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
 }
 .search-box {
+    position: relative;
     flex: 1;
-    background-color: pink;
+    height: 28px;
+    line-height: 26px;
+    color: #666;
+    padding-left: 25px;
+    border: 1px solid #ccc;
+    margin: 6px 10px;
+    /* background-color: pink; */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    font-size: 12px;
 }
+.search-box::before {
+    position: absolute;
+    left: 7px;
+    top: 7px;
+    content: '';
+    width: 35px;
+    height: 28px;
+    background: url(../images/sprite.png) no-repeat 0 0;
+    background-size: 15px auto;
+}
+/* 用户 */
 .user {
     width: 51px;
     height: 44px;
-    background-color: purple;
+    /* background-color: purple; */
     font-size: 12px;
-    color: white;
+    color: black;
     text-align: center;
 }
 .user::before {
@@ -40,7 +76,106 @@ a {
     display: block;
     width: 22px;
     height: 22px;
-    background: url(../images/sprite.png) no-repeat -1px -35px;
-    background-size: 20px auto;
-    margin: 4px auto 0;
+    background: url(../images/sprite.png) no-repeat 0 -78px;
+    background-size: 21px auto;
+    margin: 4px auto -2px;
+}
+/* 焦点图 */
+.focus {
+    padding-top: 44px;
+}
+.focus img {
+    width: 100%;
+}
+/* 局部导航栏 */
+ul {
+    display: flex;
+    margin: 3px 5px;
+    height: 64px;
+    background-color: white;
+    border-radius: 8px;
+}
+.local-nav li {
+    flex: 1;
+    /* background-color: pink; */
+}
+.local-nav a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3px;
+}
+.local-nav li [class^=localnav-icon-icon] {
+    width: 40px;
+    height: 40px;
+    /* background-color: skyblue; */
+}
+.local-nav li .localnav-icon-icon1 {
+    background: url(../images/localnav-sprite.png) no-repeat;
+    background-size: 40px auto;
+}
+.local-nav li .localnav-icon-icon2 {
+    background: url(../images/localnav-sprite.png) no-repeat 0 -40px;
+    background-size: 40px auto;
+}
+.local-nav li .localnav-icon-icon3 {
+    background: url(../images/localnav-sprite.png) no-repeat 0 -80px;
+    background-size: 40px auto;
+}
+.local-nav li .localnav-icon-icon4 {
+    background: url(../images/localnav-sprite.png) no-repeat 0 -120px;
+    background-size: 40px auto;
+}
+.local-nav li .localnav-icon-icon5 {
+    background: url(../images/localnav-sprite.png) no-repeat 0 -160px;
+    background-size: 40px auto;
+}
+/* 主导航栏 */
+nav {
+    margin: 0 5px;
+    border-radius: 8px;
+    overflow: hidden;
+    /* background-color: skyblue; */
+}
+.nav-common {
+    display: flex;
+    height: 88px;
+    /* background-color: pink; */
+}
+.nav-common:nth-child(2) {
+    margin: 2px 0;
+}
+.nav-items {
+    flex: 1;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+}
+.nav-items:nth-child(-n + 2) {
+    border-right: 2px solid white;
+}
+.nav-items a {
+    flex: 1;
+    line-height: 44px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, .2);
+}
+.nav-items a:nth-child(1) {
+    border-bottom: 2px solid white;
+}
+.nav-items:nth-child(1) a {
+    border-bottom: none;
+    background: url(../images/hotel.png) no-repeat bottom center;
+    background-size: 121px auto;
+}
+.nav-common:nth-child(1) {
+    background: -webkit-linear-gradient(left, #FA5A55, #FA994D);
+}
+.nav-common:nth-child(2) {
+    background: -webkit-linear-gradient(left, #4B90ED, #53BCED);
+}
+.nav-common:nth-child(3) {
+    background: -webkit-linear-gradient(left, #34C2A9, #6CD559);
 }
