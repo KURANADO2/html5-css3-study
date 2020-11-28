@@ -88,7 +88,7 @@ ul {
     width: 100%;
 }
 /* 局部导航栏 */
-ul {
+.local-nav {
     display: flex;
     margin: 3px 5px;
     height: 64px;
@@ -178,4 +178,107 @@ nav {
 }
 .nav-common:nth-child(3) {
     background: -webkit-linear-gradient(left, #34C2A9, #6CD559);
+}
+/* 子导航栏 */
+.sub-nav-entry {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3px 5px;
+    background-color: white;
+    border-radius: 8px;
+}
+.sub-nav-entry li {
+    flex: 20%
+}
+.sub-nav-entry a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4px 0;
+}
+.sub-nav-entry [class^=sub-nav-entry-icon] {
+    width: 28px;
+    height: 28px;
+    margin-top: 4px;
+    background-size: 28px auto;
+}
+.sub-nav-entry-icon1 {
+    background: url(../images/subnav-bg.png) no-repeat 0 0;
+}
+.sub-nav-entry-icon2 {
+    background: url(../images/subnav-bg.png) no-repeat 0 -29px;
+}
+.sub-nav-entry-icon3 {
+    background: url(../images/subnav-bg.png) no-repeat 0 -63px;
+}
+.sub-nav-entry-icon4 {
+    background: url(../images/subnav-bg.png) no-repeat 0 -99px;
+}
+.sub-nav-entry-icon5 {
+    background: url(../images/subnav-bg.png) no-repeat 0 -132px;
+}
+.sub-nav-entry-icon6 {
+    background: url(../images/subnav-bg.png) no-repeat 0 -163px;
+}
+.sub-nav-entry-icon7 {
+    background: url(../images/subnav-bg.png) no-repeat 0 -197px;
+}
+.sub-nav-entry-icon8 {
+    background: url(../images/subnav-bg.png) no-repeat 0 -230px;
+}
+.sub-nav-entry-icon9 {
+    background: url(../images/subnav-bg.png) no-repeat 0 -258px;
+}
+.sub-nav-entry-icon10 {
+    background: url(../images/subnav-bg.png) no-repeat 0 -288px;
+}
+.sales-hd {
+    position: relative;
+    height: 44px;
+    border-top: 1px solid #eee;
+    background-color: white;
+}
+.sales-hd h2 {
+    text-indent: -999px;
+}
+.sales-hd h2::after {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    content: '';
+    width: 73px;
+    height: 16px;
+    /* background-color: skyblue; */
+    background: url(../images/hot.png) no-repeat 0 -16px;
+    background-size: 73px auto;
+}
+.more {
+    position: absolute;
+    top: 9px;
+    right: 8px;
+    padding: 2px 10px;
+    background: -webkit-linear-gradient(left, #FC4F69, #FC6BC4);
+    color: white;
+    font-size: 12px;
+    border-radius: 15px;
+}
+.more::after {
+    position: absolute;
+    top: 7px;
+    right: 2px;
+    content: '';
+    width: 7px;
+    height: 7px;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    transform: rotate(45deg);
+}
+.row {
+    display: flex;
+}
+.row a {
+    flex: 1;
+}
+.row a img {
+    width: 100%;
 }
