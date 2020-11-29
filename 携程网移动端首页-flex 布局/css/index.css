@@ -236,6 +236,7 @@ nav {
     position: relative;
     height: 44px;
     border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
     background-color: white;
 }
 .sales-hd h2 {
@@ -273,11 +274,18 @@ nav {
     border-right: 2px solid white;
     transform: rotate(45deg);
 }
+.sales-bd {
+    background-color: white;
+}
 .row {
     display: flex;
 }
 .row a {
     flex: 1;
+    border-bottom: 1px solid #eee;
+}
+.row a:nth-child(1) {
+    border-right: 1px solid #eee;
 }
 .row a img {
     width: 100%;
